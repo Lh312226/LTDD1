@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-import 'flutter_01.dart';
-import 'flutter_02.dart';
-import 'flutter_03.dart';
+import 'examples.dart';
+import 'baitap01.dart';
+import 'baitap02.dart';
+import 'baitap03.dart';
 
 void main() {
   runApp(const MyApp());
@@ -14,13 +15,13 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: ThemeData(
-
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: TemperatureConverter(),
+      home: const LoginPage(),
     );
   }
 }
